@@ -1,5 +1,5 @@
 ahkscript.github.io
 ===================
 
-A github page for ahkscript ?  
+A GitHub page for ahkscript.org  
 http://ahkscript.github.io/
