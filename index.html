@@ -6,12 +6,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <!--<link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/> -->
+  <!--<link rel="stylesheet" href="stylesheets/pygment_trac.css"/> -->
+  <link rel="stylesheet" href="http://ahkscript.org/css/autohotkey.css">
+  <link rel="stylesheet" href="http://ahkscript.org/css/pure-min.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+  <script src="javascripts/modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/component.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-widget.css" />
 
-  <title>Ahkscript.github.io</title>
+  <title>AHKScript.GitHub</title>
   <meta name="description" content="A github page for ahkscript.org">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,78 +24,100 @@
 </head>
 
 <body>
+<div class="ribbon">
+	 		<!--<img src="static/ahk.png" alt="AHK" id="ahkimg" />
+	 		<img src="static/autohotkey_text.png" alt="AutoHotkey - Automation, Hotkeys, Scripting" id="ahktext" />-->
+            <img src="http://ahkscript.org/static/ahk_logo.png" class="img-responsive" width="517" height="78" alt="AutoHotkey">
+			<!-- image split in two above so it scales better on mobile devices - you can either
+			     remove the two images above and keep this single image below or vice versa
+			<img src="static/ahk_logo.png" alt="AutoHotkey - Automation, Hotkeys, Scripting" />
+			-->
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/ahkscript/ASPDM">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-package"></i>
+								</span>
+								<span class="legend">ASPDM</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-book"></i>
+								</span>
+								<span>Books</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/ahkscript/">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-code"></i>
+								</span>
+								<span>Repos</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/orgs/ahkscript/members">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-team"></i>
+								</span>
+								<span>Team</span>
+							</a>
+						</li>
+						<li>
+							<a href="HTTP://ahkscript.org/">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-link"></i>
+								</span>
+								<span>AHKScript</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+         </div>  
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Ahkscript.github.io</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">A github page for ahkscript.org</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/ahkscript" class="code">View the ahkscript.org group on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to ahkscript.org's GitHub page.</h3>
+<div id="wrapper">
 
-<p>This page was created with the automatic page generator. [WIP]</p>
+	<div class="pure-g-r splash">
+		<div class="pure-u-2-3">
+        
+			<h1>AutoHotkey on GitHub</h1>
+			<h3>Membership</h3>
+			<p>Want to be a member of the ahkscript.org GitHub group? Join with a simple post of your github username here: http://ahkscript.org/boards/viewtopic.php?t=936</p>
 
-<pre><code>$ echo [WIP]
-</code></pre>
+			<h3>AHK Tools</h3>
+			<p>Here's a list of AutoHotKey-related things, that you can find on GitHub :</p>
+			<ul>
+			<li><a href="https://github.com/Lexikos/AutoHotkey_L">Up-to-date AutoHotKey source code</a></li>
+			<li><a href="https://github.com/maul-esel/COM-Classes">COM Classes Framework</a></li>
+			<li><a href="https://github.com/Lexikos/AutoHotkey_L-Docs">AutoHotKey Docs</a></li>
+			<li><a href="https://github.com/fincs/Ahk2Exe">AHK2EXE Compiler</a></li>
+			<li><a href="https://github.com/maestrith/GUI_Creator">GUI Creator</a></li>
+			<li><a href="https://github.com/maestrith/AHK_Studio">AHK Studio</a></li>
+			</ul>
+			<p><small><em>This list is subject to changes and completion, as it is not comprehensive</em></small></p>
+			<h3>Support</h3>
+			<p>Having trouble with AutoHotkey? Check out the documentation at <a href="http://ahkscript.org/docs">http://ahkscript.org/docs</a> or contact <a href="mailto:ahkscript@live.ca">ahkscript@live.ca</a> and we’ll help you sort it out.</p>
+		</div> <!-- /pure-u-2-3 -->
 
-<h3>
-<a name="members" class="anchor" href="#members"><span class="octicon octicon-link"></span></a>Members</h3>
+			<div class="pure-u-1-3">
+				<div class="l-box tools">
+					<div class="github-widget" data-user="ahkscript"></div>
+					<script src="javascripts/github-widget.min.js"></script>
+				</div> <!-- /l-box tools -->
+			</div> <!-- /pure-u-1-3 -->
 
-<p>Want to be a member of the ahkscript.org github group? Join with a simple post of your github username here: <a href="http://ahkscript.org/boards/viewtopic.php?t=936">http://ahkscript.org/boards/viewtopic.php?t=936</a></p>
-
-<h3>
-<a name="ahkbook" class="anchor" href="#ahkbook"><span class="octicon octicon-link"></span></a>ahkbook</h3>
-
-<p>You may view the ahkbook [WIP] here: <a href="http://ahkscript.github.io/ahkbook">http://ahkscript.github.io/ahkbook</a></p>
-
-<h3>
-<a name="AHK_Tutorial" class="anchor" href="#ahkbook"><span class="octicon octicon-link"></span></a>AHK_Tutorial</h3>
-
-<p>A tutorial for AutoHotkey by tidbit : <a href="http://ahkscript.github.io/AHK_Tutorial">http://ahkscript.github.io/AHK_Tutorial</a></p>
-
-<h3>
-<a name="ASPDM" class="anchor" href="#ahkbook"><span class="octicon octicon-link"></span></a>ASPDM (Preview)</h3>
-
-<p>A preview of the ASPDM website : <a href="http://ahkscript.github.io/ASPDM/Network">http://ahkscript.github.io/ASPDM/Network</a></p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>[WIP]</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with AutoHotkey? Check out the documentation at <a href="http://ahkscript.org/docs">http://ahkscript.org/docs</a> or contact <a href="mailto:ahkscript@live.ca">ahkscript@live.ca</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-
-      <p><a href="https://github.com/ahkscript" class="avatar"><img src="https://2.gravatar.com/avatar/aea8de880fef73cc7eb1ce9c2874c833?d=https%3A%2F%2Fidenticons.github.com%2Ff747727d706d4445bd2ccfb8c3b971c5.png&amp;r=x&amp;s=60" width="48" height="48"/></a>View <a href="https://github.com/ahkscript">ahkscript</a> on <a href="https://www.github.com">GitHub</a></p>
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/ahkscript/ahkscript.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/ahkscript/ahkscript.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
+     </div> <!-- /pure-g-r splash -->
   
 </body>
 </html>
