@@ -226,7 +226,7 @@ a, button {
 	}
 
 	.icon + span {
-		margin-top: 0.4em;
+		margin-top: 0.25em;
 		-webkit-transition: margin .5s;
 		-moz-transition: margin .5s;
 		-o-transition: margin .5s;
