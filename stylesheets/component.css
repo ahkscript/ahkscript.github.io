@@ -78,8 +78,7 @@ a, li {
     display: inline-block;
     text-align: center;
     width: 100%;
-	width: 700px;
-	margin: 20px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
 	padding: 0;
 	list-style: none;
 	font-size: 1.5em;
@@ -93,7 +92,6 @@ a, li {
 	margin-right: auto;
     display: inline-block;
     text-align: center;
-    width: 100%;
 }
 
 .nav a {
@@ -227,7 +225,7 @@ a, button {
 	}
 
 	.icon + span {
-		margin-top: 0.4em;
+		margin-top: 0.25em;
 		-webkit-transition: margin .5s;
 		-moz-transition: margin .5s;
 		-o-transition: margin .5s;
@@ -237,13 +235,13 @@ a, button {
 
 	/* Animating the height of the element*/
 	.nav a {
-		height: 4em;
+		height: 3em;
 	}
 
 	.no-touch .nav a:hover ,
 	.nav a:active ,
 	.nav a:focus {
-		height: 4em;
+		height: 3em;
 	}	
 
 	/* Making the text follow the height animation 
