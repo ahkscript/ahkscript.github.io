@@ -235,13 +235,13 @@ a, button {
 
 	/* Animating the height of the element*/
 	.nav a {
-		height: 3em;
+		height: 2.5em;
 	}
 
 	.no-touch .nav a:hover ,
 	.nav a:active ,
 	.nav a:focus {
-		height: 3em;
+		height: 2.5em;
 	}	
 
 	/* Making the text follow the height animation 
