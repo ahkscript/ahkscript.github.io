@@ -221,7 +221,7 @@ a, button {
 	/* Placing the icon */
 	
 	.icon {
-		padding-top: 0.18em;
+		padding-top: 0.1em;
 	}
 
 	.icon + span {
@@ -235,13 +235,13 @@ a, button {
 
 	/* Animating the height of the element*/
 	.nav a {
-		height: 2em;
+		height: 2.3em;
 	}
 
 	.no-touch .nav a:hover ,
 	.nav a:active ,
 	.nav a:focus {
-		height: 2em;
+		height: 2.3em;
 	}	
 
 	/* Making the text follow the height animation 
