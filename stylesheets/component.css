@@ -167,7 +167,7 @@ a, button {
 	/* Transforms the list into a horizontal navigation */
 	.nav li {
 		float: left;
-		width: 16.66666666666667%;
+		width: 14.285714285714285714285714285713%;
 		text-align: center;
 		-webkit-transition: border .5s;
 		-moz-transition: border .5s;

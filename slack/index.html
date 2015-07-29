@@ -8,14 +8,16 @@
 
   <!--<link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/> -->
   <!--<link rel="stylesheet" href="stylesheets/pygment_trac.css"/> -->
-  <link rel="stylesheet" href="stylesheets/autohotkey.css">
-  <link rel="stylesheet" href="stylesheets/pure-min.css">
+
+  <link rel="stylesheet" href="../stylesheets/autohotkey.css">
+  <link rel="stylesheet" href="../stylesheets/pure-min.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-  <script src="javascripts/modernizr.custom.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheets/component.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-widget.css" />
-  <link rel="stylesheet" href="stylesheets/octicons/octicons.css">
+  <script type="text/javascript" src="../javascripts/script.js"></script>
+  <script src="../javascripts/modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/component.css" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/github-widget.css" />
+
+  <link rel="stylesheet" href="../stylesheets/octicons/octicons.css">
 
   <title>AHKScript.GitHub</title>
   <meta name="description" content="A GitHub page for ahkscript.org">
@@ -99,31 +101,33 @@
 	<div class="pure-g-r splash">
 		<div class="pure-u-2-3">
         
-			<h1>AutoHotkey on GitHub</h1>
-			<h3>Membership</h3>
-			<p>Want to be a member of the ahkscript.org GitHub group? Join with a simple post of your GitHub username here: <a href="http://ahkscript.org/boards/viewtopic.php?t=936">http://ahkscript.org/boards/viewtopic.php?t=936</a></p>
-
-			<h3>AHK Tools</h3>
-			<p>Here's a list of AutoHotkey-related things, that you can find on GitHub :</p>
-			<ul>
-			<li><a href="https://github.com/Lexikos/AutoHotkey_L">Up-to-date AutoHotkey source code</a></li>
-			<li><a href="https://github.com/maul-esel/COM-Classes">COM Classes Framework</a></li>
-			<li><a href="https://github.com/Lexikos/AutoHotkey_L-Docs">AutoHotkey Docs</a></li>
-			<li><a href="https://github.com/fincs/Ahk2Exe">Ahk2Exe Compiler</a></li>
-			<li><a href="https://github.com/maestrith/GUI_Creator">GUI Creator</a></li>
-			<li><a href="https://github.com/maestrith/AHK_Studio">AHK Studio</a></li>
-			<li><a href="https://github.com/fincs/SciTE4AutoHotkey">SciTE4AutoHotkey</a></li>
-			<li><a href="https://github.com/ahkscript/awesome-AutoHotkey">More in the "Awesome AutoHotkey" list</a></li>
-			</ul>
-			<p><small><em>This list is subject to changes and completion, as it is not comprehensive</em></small></p>
-			<h3>Support</h3>
-			<p>Having trouble with AutoHotkey? Ask your question in the forums <a href="http://ahkscript.org/boards/viewforum.php?f=5">[here]</a> or check out the documentation at <a href="http://ahkscript.org/docs">http://ahkscript.org/docs</a>. You can also try contacting <a href="mailto:support@ahkscript.org">support@ahkscript.org</a> and we’ll help you sort it out.</p>
+			<h1>AutoHotkey on Slack</h1>
+			<p>We now have a <a href="http://www.slack.com/">Slack</a> site for the AutoHotkey community, and this form will let 
+               you sign up for an account. Slack is an awesome way for us to stay connected and have conversations, but it requires us to send you an 
+               invitation via email (it should arrive nearly instantly). Once you receive the invitation you can log in to the <a href="http://ahkscript.slack.com">AHKscript Slack</a>.</p>
+			<form action="#" method="post" id="invitationForm" class="pure-form">
+				<div class="description">
+                       <h3>Join-Slack</h3>
+                       <div style="display: none;" class="flash-message success" id="invitationFormSuccess">
+                           Great! An invitation should arrive within a few minutes. <br/>
+                           Once you receive it, you can log in at <a href="http://ahkscript.slack.com">ahkscript.slack.com</a>
+                       </div>
+                       <div style="display: none;" class="flash-message error" id="invitationFormFail">
+                           Oh No! Our scripts are malfunctioning and cannot send invitations at this time. Please try again later.
+                       </div>
+                   </div>
+        		<fieldset>
+        			<input required="" id="email" name="invitation[email]" size="30" placeholder="you@example.com" type="email">
+        			<input class="pure-button pure-button-primary" role="button" id="submit" value="Send Invite" type="submit">
+        			<!--<span class="octicon octicon-mail"></span>-->
+        		</fieldset>
+            </form>
 		</div> <!-- /pure-u-2-3 -->
 
 			<div class="pure-u-1-3">
 				<div class="l-box tools">
 					<div class="github-widget" data-user="ahkscript"></div>
-					<script src="javascripts/github-widget.min.js"></script>
+					<script src="../javascripts/github-widget.min.js"></script>
 				</div> <!-- /l-box tools -->
 			</div> <!-- /pure-u-1-3 -->
 
