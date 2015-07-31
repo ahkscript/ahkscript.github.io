@@ -1,0 +1,806 @@
+@font-face {
+  font-family: 'ahkscript';
+  src: url('../fonts/ahkscript.eot');
+  src: url('../fonts/ahkscript.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ahkscript.woff') format('woff'),
+  url('../fonts/ahkscript.ttf') format('truetype'),
+  url('../fonts/ahkscript.svg#ahkscript') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ahkscript';
+    src: url('../fonts/ahkscript.svg#ahkscript') format('svg');
+  };
+}
+
+.icon-home, .icon-team, .icon-download, .icon-link, .icon-package, .icon-book, .icon-twitter, .icon-github, .icon-code {
+  font-family: 'ahkscript';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-package:before {
+  content: "\e004";
+}
+
+
+/*
+ * Globals
+ */
+
+ html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: sans-serif;
+  color: #555;
+  /* Margin bottom by footer height */
+  margin-bottom: 20px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+ @media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*
+ * Header
+ */
+
+ header {
+  text-align: center;
+  background: #eee;
+  padding: 2em;
+  color: #666;
+}
+.ribbon img {
+  width: 517px;
+  height: 78px;
+  margin-top: -0.5em;
+  padding: 0;
+  display: inline-block;
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+ /* custom formatting for MENU button */
+ .menu-area .toogle-bars button {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #2e6da4;
+}
+
+/* toggle MENU button icon */
+.menu-area .toogle-bars button .ic-open {
+  display: none;
+  visibility: hidden;
+}
+.menu-area .toogle-bars button .ic-close {
+  display: inline;
+  visibility: visible;
+}
+.menu-area .toogle-bars button.collapsed .ic-open {
+  display: inline;
+  visibility: visible;
+}
+.menu-area .toogle-bars button.collapsed .ic-close {
+  display: none;
+  visibility: hidden;
+}
+
+/* Fix Navbar */
+.menu-area.nav-fixed {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
+  width: 100%;
+  bottom: inherit;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.menu-area .main-nav {
+  visibility: visible !important;
+  margin: 0;
+  background: transparent;
+}
+
+.nav ul {
+  position: relative; /* on positionne le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* Overwrite bootstrap's stuff */
+.nav>li>a {
+  padding: 0;
+}
+.nav>li>a:active,
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background: 
+}
+.nav>li>a:active,
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: transparent;
+}
+.navbar {
+  border: 0px solid transparent; 
+}
+.nav li span {
+  display: block;
+  position: relative; /* on positionne le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.0em;
+}
+
+.nav a {
+  position: relative; /* on positionne le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: rgba(249, 249, 249, .9);
+  padding: 0;
+  text-decoration: none;
+  -webkit-transition: color .5s, background .5s, height .5s;
+  -moz-transition: color .5s, background .5s, height .5s;
+  -o-transition: color .5s, background .5s, height .5s;
+  -ms-transition: color .5s, background .5s, height .5s;
+  transition: color .5s, background .5s, height .5s;
+}
+
+.nav i{
+  /* Make the font smoother for Chrome */
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Remove the blue Webkit background when element is tapped */
+
+a, button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Hover effect for the whole navigation to make the hovered item stand out */
+
+.nav ul:hover a {
+  color: rgba(249, 249, 249, .5);
+}
+
+.nav ul:hover a:hover {
+  color: rgba(249, 249, 249, 0.99);
+}
+
+/* Adding some background color to the different menu items */
+
+.nav li:nth-child(7n+1) {
+  background: rgb(208, 101, 3);
+}
+
+.nav li:nth-child(7n+2) {
+  background: rgb(233, 147, 26);
+}
+
+.nav li:nth-child(7n+3) {
+  background: rgb(22, 145, 190);
+}
+
+.nav li:nth-child(7n+4) {
+  background: rgb(22, 107, 162);
+}
+
+.nav li:nth-child(7n+5) {
+  background: rgb(27, 54, 71);
+}
+
+.nav li:nth-child(7n+6) {
+  background: rgb(21, 40, 54);
+}
+
+.nav li:nth-child(7n+7) {
+  background: rgb(9, 18, 25);
+}
+
+/* For screen bigger than 800px */
+@media (min-width: 50em) {
+
+  /* Transforms the list into a horizontal navigation */
+  .nav ul {
+    width: 100%
+  }
+
+  .nav li {
+    float: left;
+    width: 14.285714285714285714285714285713%;
+    text-align: center;
+    -webkit-transition: border .5s;
+    -moz-transition: border .5s;
+    -o-transition: border .5s;
+    -ms-transition: border .5s;
+    transition: border .5s;
+  }
+
+  .nav a {
+    display: block;
+    width: auto;
+  }
+
+  /* hover, focused and active effects that add a little colored border to the different items */
+  .nav li:nth-child(7n+1) a:hover,
+  .nav li:nth-child(7n+1) a:active,
+  .nav li:nth-child(7n+1) a:focus {
+    border-bottom: 4px solid rgb(174, 78, 1);
+  }
+
+  .nav li:nth-child(7n+2) a:hover,
+  .nav li:nth-child(7n+2) a:active,
+  .nav li:nth-child(7n+2) a:focus {
+    border-bottom: 4px solid rgb(191, 117, 20);
+  }
+
+  .nav li:nth-child(7n+3) a:hover,
+  .nav li:nth-child(7n+3) a:active,
+  .nav li:nth-child(7n+3) a:focus {
+    border-bottom: 4px solid rgb(12, 110, 149);
+  }
+
+  .nav li:nth-child(7n+4) a:hover,
+  .nav li:nth-child(7n+4) a:active,
+  .nav li:nth-child(7n+4) a:focus {
+    border-bottom: 4px solid rgb(10, 75, 117);
+  }
+
+  .nav li:nth-child(7n+5) a:hover,
+  .nav li:nth-child(7n+5) a:active,
+  .nav li:nth-child(7n+5) a:focus {
+    border-bottom: 4px solid rgb(16, 34, 44);
+  }
+
+  .nav li:nth-child(7n+6) a:hover,
+  .nav li:nth-child(7n+6) a:active,
+  .nav li:nth-child(7n+6) a:focus {
+    border-bottom: 4px solid rgb(9, 18, 25);
+  }
+
+  .nav li:nth-child(7n+7) a:hover,
+  .nav li:nth-child(7n+7) a:active,
+  .nav li:nth-child(7n+7) a:focus {
+    border-bottom: 4px solid rgb(0, 0, 0);
+  }
+
+  /* Placing the icon */
+  
+  .icon {
+    padding-top: 0.1em;
+  }
+
+  .icon + span {
+    margin-top: 0.18em;
+    -webkit-transition: margin .5s;
+    -moz-transition: margin .5s;
+    -o-transition: margin .5s;
+    -ms-transition: margin .5s;
+    transition: margin .5s;
+  }
+
+  /* Animating the height of the element*/
+  .nav a {
+    height: 3.0em;
+  }
+
+  .nav a:hover ,
+  .nav a:active ,
+  .nav a:focus {
+    /*height: 2.3em;*/
+  } 
+
+  /* Making the text follow the height animation 
+  .nav a:hover .icon + span {
+    margin-top: 1em;
+    -webkit-transition: margin .5s;
+    -moz-transition: margin .5s;
+    -o-transition: margin .5s;
+    -ms-transition: margin .5s;
+    transition: margin .5s;
+  }
+  */
+  /* Positioning the icons and preparing for the animation*/
+  .nav i {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.4em;
+    border-radius: 50%;
+    font-size: 1.6em;
+    box-shadow: 0 0 0 30px transparent;
+    background: rgba(255,255,255,0.1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: box-shadow .6s ease-in-out;
+    -moz-transition: box-shadow .6s ease-in-out;
+    -o-transition: box-shadow .6s ease-in-out;
+    -ms-transition: box-shadow .6s ease-in-out;
+    transition: box-shadow .6s ease-in-out;
+  } 
+  
+  /* Animate the box-shadow to create the effect */
+  .nav a:hover i,
+  .nav a:active i,
+  .nav a:focus i {    
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .4s ease-in-out;
+    -moz-transition: box-shadow .4s ease-in-out;
+    -o-transition: box-shadow .4s ease-in-out;
+    -ms-transition: box-shadow .4s ease-in-out;
+    transition: box-shadow .4s ease-in-out;
+  }
+
+}
+
+@media (min-width: 50em) and (max-width: 61.250em) {
+
+  /* Size and font adjustments to make it fit into the screen*/
+  .nav ul {
+    font-size: 2.0em;
+  }
+
+}
+
+/* The "tablet" and "mobile" version */
+
+@media (max-width: 49.938em) {    
+
+  /* Instead of adding a border, we transition the background color */
+  .nav li:nth-child(7n+1) a:hover,
+  .nav li:nth-child(7n+1) a:active,
+  .nav li:nth-child(7n+1) a:focus {
+    background: rgb(227, 119, 20);
+  }
+
+  .nav li:nth-child(7n+2) a:hover,
+  .nav li:nth-child(7n+2) a:active,
+  .nav li:nth-child(7n+2) a:focus {
+    background: rgb(245, 160, 41);
+  }
+
+  .nav li:nth-child(7n+3) a:hover,
+  .nav li:nth-child(7n+3) a:active,
+  .nav li:nth-child(7n+3) a:focus {
+    background: rgb(44, 168, 219);
+  }
+
+  .nav li:nth-child(7n+4) a:hover,
+  .nav li:nth-child(7n+4) a:active,
+  .nav li:nth-child(7n+4) a:focus {
+    background: rgb(31, 120, 176);
+  }
+
+  .nav li:nth-child(7n+5) a:hover,
+  .nav li:nth-child(7n+5) a:active,
+  .nav li:nth-child(7n+5) a:focus {
+    background: rgb(39, 70, 90);
+  }
+
+  .nav li:nth-child(7n+6) a:hover,
+  .nav li:nth-child(7n+6) a:active,
+  .nav li:nth-child(7n+6) a:focus {
+    background: rgb(32, 54, 68);
+  }
+
+  .nav li:nth-child(7n+7) a:hover,
+  .nav li:nth-child(7n+7) a:active,
+  .nav li:nth-child(7n+7) a:focus {
+    background: rgb(9, 18, 25);
+  }
+
+  .nav ul li {
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    transition: background 0.5s;
+  } 
+
+  .icon + span {
+    font-size: 2.0em;
+  }
+
+}
+
+/* CSS specific to the 2x3 columns version */
+@media (min-width:32.5em) and (max-width: 49.938em) {
+
+  /* Creating the 2 column layout using floating elements once again */
+  .nav li {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  
+  /* Adding some padding to make the elements look nicer*/
+  .nav a {
+    padding: 0.8em;   
+  }
+
+  /* Displaying the icons on the left, and the text on the right side using inlin-block*/
+  .nav li span, 
+  .nav li span.icon {
+    display: inline-block;
+  }
+
+  .nav i {
+    font-size: 1.8em;
+  }
+
+  .nav li span.icon {
+    width: 50%;
+  }
+
+  .nav li .icon + span {
+    font-size: 1em;
+  }
+
+  .icon + span {
+    position: relative;
+    top: -0.2em;
+    font-size: 2.0em;
+  }
+
+  /* Adaptating to the icons to animate the size and border of the rounded background in a more discreet way */
+  .nav li i {
+    display: inline-block;
+    padding: 8% 9%;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    font-size: 1.5em;
+    background: rgba(255,255,255,0.1);
+    -webkit-transition: border .5s;
+    -moz-transition: border .5s;
+    -o-transition: border .5s;
+    -ms-transition: border .5s;
+    transition: border .5s;
+  }
+
+  /* Transition effect on the border color */
+  .nav li:hover i,
+  .nav li:active i,
+  .nav li:focus i {
+    border: 4px solid rgba(255,255,255,0.1);
+  }
+  
+}
+
+/* Adapting the font size and width for smaller screns*/
+@media (min-width: 32.5em) and (max-width: 38.688em) {
+
+  .nav li span.icon {
+    width: 50%;
+  }
+
+  .nav li .icon + span {
+    font-size: 1.0em;
+  }
+}
+
+/* Styling the toggle menu link and hiding it */
+.nav .navtoogle{
+  display: none;  
+  width: 100%;
+  padding: 0.5em 0.5em 0.8em;
+  font-family: 'Lato',Calibri,Arial,sans-serif;
+  font-weight: normal;
+  text-align: left;
+  color: rgb(7, 16, 15);
+  font-size: 1.2em;
+  background: none; 
+  border: none;
+  border-bottom: 4px solid rgb(221, 221, 221);
+  cursor: pointer;
+  clear: both;
+}
+
+.navtoogle i{
+  z-index:-1;
+}
+
+.icon-menu {
+  position: relative;
+  top: 3px;
+  line-height: 0;
+  font-size: 1.6em;
+}
+
+@media (max-width: 32.438em) {
+
+  /* Unhiding the styled menu link */
+  .nav .navtoogle{
+    margin: 0;
+    display: block;
+  }
+  
+  /* Animating the height of the navigation when the button is clicked */
+  
+  /* When JavaScript is disabled, we hide the menu */
+  .no-js .nav ul {
+    max-height: 30em;
+    overflow: hidden;
+  }
+  
+  /* When JavaScript is enabled, we hide the menu */
+  .js .nav ul {
+    max-height: 0em;
+    overflow: hidden;
+  }
+  
+  /* Displaying the menu when the user has clicked on the button*/
+  .js .nav .active + ul {   
+    max-height: 30em;
+    overflow: hidden;
+    -webkit-transition: max-height .4s;
+    -moz-transition: max-height .4s;
+    -o-transition: max-height .4s;
+    -ms-transition: max-height .4s;
+    transition: max-height .4s;
+  }
+
+  /* Adapting the layout of the menu for smaller screens : icon on the left and text on the right*/
+  
+  .nav li span {
+    display: inline-block;
+    height: 100%;
+    font-size: 2.0em;
+  }
+
+  .nav a {
+    padding: 0.5em;   
+  }
+  
+  .nav i {
+    font-size: 2.0em;
+  }
+
+  .icon + span {
+    margin-left: 1em;
+    font-size: 2.0em;
+  }
+  
+  /* Adding a left border of 8 px with a different color for each menu item*/
+  .nav li:nth-child(7n+1) {
+    border-left: 8px solid rgb(174, 78, 1);
+  }
+
+  .nav li:nth-child(7n+2) {
+    border-left: 8px solid rgb(191, 117, 20);
+  }
+
+  .nav li:nth-child(7n+3) {
+    border-left: 8px solid rgb(13, 111, 150);
+  }
+
+  .nav li:nth-child(7n+4) {
+    border-left: 8px solid rgb(10, 75, 117);
+  }
+
+  .nav li:nth-child(7n+5) {
+    border-left: 8px solid rgb(16, 34, 44);
+  }
+
+  .nav li:nth-child(7n+6) {
+    border-left: 8px solid rgb(9, 18, 25);
+  }
+
+  .nav li:nth-child(7n+7) {
+    border-left: 8px solid rgb(0, 0, 0);
+  }
+
+  /* make the nav bigger on touch screens */
+  .nav a {
+    padding: 0.8em;
+  }
+}
+
+
+/*
+ * Blog name and description
+ */
+
+ .blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  /*margin-top: 30px;*/
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+ .blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+ .blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+/*
+ * Sidebar
+ */
+ .tools {
+  /*padding: 0.8em;
+  border-left: 5px solid #eee;
+  border-radius: 10px;*/
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #bed7d7;
+  display: inline-block;
+  line-height: 1.5;
+  width: 100%;
+  padding: 1em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.tools:before {
+  font-family: octicons;
+  content: "\f001";
+  font-size: 1.8em;
+  color: #ffffff;
+  padding: 4px 6px 10px 9px;
+  background: #22738a;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  position: absolute;
+  left: 44%;
+  margin-top: -1.5em;
+  width: 40px;
+  height: 40px;
+}
+
+.gw-repo-outer:first-child .gw-repo {
+  border-top: 0;
+}
+
+/*
+ * Footer
+ */
+
+ .blog-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+.blog-footer .back-to-top {
+  position: relative;
+  bottom: -20px;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  text-decoration: none;
+  outline: none;
+  line-height: 30px;
+  text-align: center;
+  color: #7d7d7d;
+  background: #505050;
+}

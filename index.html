@@ -1,133 +1,211 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <!--<link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/> -->
-  <!--<link rel="stylesheet" href="stylesheets/pygment_trac.css"/> -->
-  <link rel="stylesheet" href="stylesheets/autohotkey.css">
-  <link rel="stylesheet" href="stylesheets/pure-min.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-  <script src="javascripts/modernizr.custom.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheets/component.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-widget.css" />
-  <link rel="stylesheet" href="stylesheets/octicons/octicons.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="A GitHub page for ahkscript.org">
+  <meta name="author" content="">
+  <!--<link rel="icon" href="../../favicon.ico">-->
 
   <title>AHKScript.GitHub</title>
-  <meta name="description" content="A GitHub page for ahkscript.org">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- GitHubs Octicons -->
+  <link rel="stylesheet" href="stylesheets/octicons/octicons.css">
 
-</head>
+  <!-- Custom styles for this template -->
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <!-- GitHub Widget Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-widget.css" />
 
-<body>
-<div class="ribbon">
-	 		<!--<img src="static/ahk.png" alt="AHK" id="ahkimg" />
-	 		<img src="static/autohotkey_text.png" alt="AutoHotkey - Automation, Hotkeys, Scripting" id="ahktext" />-->
-            <img src="http://ahkscript.org/static/ahk_logo.png" class="img-responsive" width="517" height="78" alt="AutoHotkey">
-			<!-- image split in two above so it scales better on mobile devices - you can either
-			     remove the two images above and keep this single image below or vice versa
-			<img src="static/ahk_logo.png" alt="AutoHotkey - Automation, Hotkeys, Scripting" />
-			-->
-         </div>  
-<nav id="menu" class="nav" style="margin-bottom:0px;">					
-					<ul>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-home"></i>
-								</span>
-								<span>Home</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/ahkscript/ASPDM">
-								<span class="icon"> 
-									<i aria-hidden="true" class="icon-package"></i>
-								</span>
-								<span class="legend">ASPDM</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-book"></i>
-								</span>
-								<span>Books</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/ahkscript/">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-code"></i>
-								</span>
-								<span>Repos</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/orgs/ahkscript/people">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-team"></i>
-								</span>
-								<span>Team</span>
-							</a>
-						</li>
-						<li>
-							<a href="/slack">
-								<span class="icon">
-									<i aria-hidden="true" class="octicon octicon-comment-discussion"></i>
-								</span>
-								<span>Slack</span>
-							</a>
-						</li>
-						<li>
-							<a href="HTTP://ahkscript.org/">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-link"></i>
-								</span>
-								<span>AHKScript</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-<div id="wrapper">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
 
-	<div class="pure-g-r splash">
-		<div class="pure-u-2-3">
-        
-			<h1>AutoHotkey on GitHub</h1>
-			<h3>Membership</h3>
-			<p>Want to be a member of the ahkscript.org GitHub group? Join with a simple post of your GitHub username here: <a href="http://ahkscript.org/boards/viewtopic.php?t=936">http://ahkscript.org/boards/viewtopic.php?t=936</a></p>
+    <body>
+      <header class="main-header">
+        <div class="ribbon">
+      <!-- <img src="http://ahkscript.org/static/ahk.png" alt="AHK" id="ahkimg" />
+      <img src="http://ahkscript.org/static/autohotkey_text.png" alt="AutoHotkey - Automation, Hotkeys, Scripting" id="ahktext" /> -->
+      <img src="http://ahkscript.org/static/ahk_logo.png" class="img-responsive" width="517" height="78" alt="AutoHotkey">
+      <!-- image split in two above so it scales better on mobile devices - you can either
+           remove the two images above and keep this single image below or vice versa
+      <img src="static/ahk_logo.png" alt="AutoHotkey - Automation, Hotkeys, Scripting" />
+    -->
+  </div> 
+</header>
 
-			<h3>AHK Tools</h3>
-			<p>Here's a list of AutoHotkey-related things, that you can find on GitHub :</p>
-			<ul>
-			<li><a href="https://github.com/Lexikos/AutoHotkey_L">Up-to-date AutoHotkey source code</a></li>
-			<li><a href="https://github.com/maul-esel/COM-Classes">COM Classes Framework</a></li>
-			<li><a href="https://github.com/Lexikos/AutoHotkey_L-Docs">AutoHotkey Docs</a></li>
-			<li><a href="https://github.com/fincs/Ahk2Exe">Ahk2Exe Compiler</a></li>
-			<li><a href="https://github.com/maestrith/GUI_Creator">GUI Creator</a></li>
-			<li><a href="https://github.com/maestrith/AHK_Studio">AHK Studio</a></li>
-			<li><a href="https://github.com/fincs/SciTE4AutoHotkey">SciTE4AutoHotkey</a></li>
-			<li><a href="https://github.com/ahkscript/awesome-AutoHotkey">More in the "Awesome AutoHotkey" list</a></li>
-			</ul>
-			<p><small><em>This list is subject to changes and completion, as it is not comprehensive</em></small></p>
-			<h3>Support</h3>
-			<p>Having trouble with AutoHotkey? Ask your question in the forums <a href="http://ahkscript.org/boards/viewforum.php?f=5">[here]</a> or check out the documentation at <a href="http://ahkscript.org/docs">http://ahkscript.org/docs</a>. You can also try contacting <a href="mailto:support@ahkscript.org">support@ahkscript.org</a> and we’ll help you sort it out.</p>
-		</div> <!-- /pure-u-2-3 -->
+<nav class="navbar menu-area">
+  <div class="navbar-header toogle-bars">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar"><i class="octicon octicon-three-bars ic-open"></i> <i class="octicon octicon-x ic-close"></i> MENU</a>
+      <!-- <a href="#menu-collapse" data-toggle="collapse" data-target="#navbar" class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar"><i class="octicon octicon-three-bars ic-open"></i> <i class="octicon octicon-x ic-close"></i> MENU</a> -->
+    </div>
+    <div id="menu-collapse" class="menu-collapse navbar-collapse collapse">
+      <div class="row">
+        <ul class="main-nav nav">
+          <li class="active">
+            <a href="#home" class="link-inpage">
+              <span class="icon">
+                <i aria-hidden="true" class="octicon octicon-home"></i>
+              </span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ahkscript/ASPDM">
+              <span class="icon"> 
+                <i aria-hidden="true" class="icon-package"></i>
+              </span>
+              <span class="legend">ASPDM</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i aria-hidden="true" class="octicon octicon-book"></i>
+              </span>
+              <span>Books</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ahkscript/">
+              <span class="icon">
+                <i aria-hidden="true" class="octicon octicon-repo"></i>
+              </span>
+              <span>Repos</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/orgs/ahkscript/people">
+              <span class="icon">
+                <i aria-hidden="true" class="octicon octicon-organization"></i>
+              </span>
+              <span>Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="#slack" class="link-inpage">
+              <span class="icon">
+                <i aria-hidden="true" class="octicon octicon-comment-discussion"></i>
+              </span>
+              <span>Slack</span>
+            </a>
+          </li>
+          <li>
+            <a href="HTTP://ahkscript.org/">
+              <span class="icon">
+                <i aria-hidden="true" class="octicon octicon-link-external"></i>
+              </span>
+              <span>AHKScript</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-			<div class="pure-u-1-3">
-				<div class="l-box tools">
-					<div class="github-widget" data-user="ahkscript"></div>
-					<script src="javascripts/github-widget.min.js"></script>
-				</div> <!-- /l-box tools -->
-			</div> <!-- /pure-u-1-3 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 blog-main">
+        <div class="blog-header">
+          <h1 class="blog-title">AutoHotkey on GitHub</h1>
+          <p class="lead blog-description">The official AutoHotkey presence on <a href="https://github.com">GitHub</a>.</p>
+        </div> <!-- /div.blog-header -->
 
-     </div> <!-- /pure-g-r splash -->
-  
-</body>
-</html>
+        <div class="segment segment_home">
+          <div class="blog-post">
+            <h2 class="blog-post-title">Membership</h2>
+            <!-- <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p> -->
+
+            <p>Want to be a member of the ahkscript.org GitHub group? Join with a simple post of your GitHub username here: <a href="http://ahkscript.org/boards/viewtopic.php?t=936">http://ahkscript.org/boards/viewtopic.php?t=936</a></p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">AHK Tools</h2>
+            <p>Here's a list of AutoHotkey-related things, that you can find on GitHub :</p>
+            <ul>
+              <li><a href="https://github.com/Lexikos/AutoHotkey_L">Up-to-date AutoHotkey source code</a></li>
+              <li><a href="https://github.com/maul-esel/COM-Classes">COM Classes Framework</a></li>
+              <li><a href="https://github.com/Lexikos/AutoHotkey_L-Docs">AutoHotkey Docs</a></li>
+              <li><a href="https://github.com/fincs/Ahk2Exe">Ahk2Exe Compiler</a></li>
+              <li><a href="https://github.com/maestrith/GUI_Creator">GUI Creator</a></li>
+              <li><a href="https://github.com/maestrith/AHK_Studio">AHK Studio</a></li>
+              <li><a href="https://github.com/fincs/SciTE4AutoHotkey">SciTE4AutoHotkey</a></li>
+              <li><a href="https://github.com/ahkscript/awesome-AutoHotkey">More in the "Awesome AutoHotkey" list</a></li>
+            </ul>
+            <p><small><em>This list is subject to changes and completion, as it is not comprehensive</em></small></p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Support</h2>
+            <p>Having trouble with AutoHotkey? Ask your question in the forums <a href="http://ahkscript.org/boards/viewforum.php?f=5">[here]</a> or check out the documentation at <a href="http://ahkscript.org/docs">http://ahkscript.org/docs</a>. You can also try contacting <a href="mailto:support@ahkscript.org">support@ahkscript.org</a> and we’ll help you sort it out.</p>
+          </div><!-- /.blog-post -->
+        </div> <!-- /.content.content_index -->
+
+        <div class="segment segment_slack">
+          <div class="blog-post">
+            <h2 class="blog-post-title">AutoHotkey on Slack</h2>
+            <p>We now have a <a href="http://www.slack.com/">Slack</a> site for the AutoHotkey community, and this form will let 
+              you sign up for an account. Slack is an awesome way for us to stay connected and have conversations, but it requires us to send you an 
+              invitation via email (it should arrive nearly instantly). Once you receive the invitation you can log in to the <a href="http://ahkscript.slack.com">AHKscript Slack</a>.</p>
+              <form action="#" method="post" id="invitationForm" class="form-inline">
+                <div class="description">
+                  <h3>Join-Slack</h3>
+                  <div style="display: none;" class="flash-message success" id="invitationFormSuccess">
+                    Great! An invitation should arrive within a few minutes. <br/>
+                    Once you receive it, you can log in at <a href="http://ahkscript.slack.com">ahkscript.slack.com</a>
+                  </div>
+                  <div style="display: none;" class="flash-message error" id="invitationFormFail">
+                    Oh No! Our scripts are malfunctioning and cannot send invitations at this time. Please try again later.
+                  </div>
+                </div>
+                <div class="input-group col-sm-10">
+                  <div class="input-group-addon"><span class="octicon octicon-mail"></span></div>
+                  <input required="" class="form-control input-lg" id="email" name="invitation[email]" size="30" placeholder="you@example.com" type="email">
+                  <span class="input-group-btn">
+                    <input class="btn btn-primary btn-lg" role="button" id="submit" value="Send Invite" type="submit">
+                  </span>
+                </div>
+              </form>
+            </form>
+          </div><!-- /.blog-post -->
+        </div><!-- /.content.content_slack -->
+      </div><!-- /.blog-main -->
+
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module sidebar-module-inset">
+          <div class="l-box tools">
+            <div class="github-widget" data-user="ahkscript"></div>
+            <script src="javascripts/github-widget.min.js"></script>
+          </div> <!-- /l-box tools -->
+        </div>
+      </div><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+  <footer class="blog-footer">
+    <p class="text-muted"><b>Copyright</b> © 2013-2014 AutoHotkey Foundation LLC - AutoHotkey Software License: <a href="http://ahkscript.org/docs/license.htm">GNU General Public License</a></p>
+    <a href="#" class="back-to-top"><i class="octicon octicon-jump-up"></i></a>
+  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    <script src="javascripts/script.js"></script>
+  </body>
+  </html>
