@@ -139,10 +139,14 @@
     $('.segment_'+window.location.hash.substr(1)).show()
   } else {
     $('.segment').hide();
-    $('.segment_home').show()
+    $('.segment_home').show();
+    $('.link-inpage').parent().removeClass('active')
+    $('.link-inpage[href="#home"').parent().addClass('active')
   }
 
   $('.link-inpage').click(function(e) {
+    $('.link-inpage').parent().removeClass('active')
+    $(this).parent().addClass('active')
     $('.segment').hide();
     $('.segment_'+$(this).attr('href').substr(1)).show()
   });
