@@ -1,3 +1,6 @@
 [submodule "ko"]
 	path = ko
 	url = https://github.com/ahkscript/AHK-Docs_KO
+[submodule "pt"]
+	path = pt
+	url = https://github.com/ahkscript/AHK-Docs_PT-BR
