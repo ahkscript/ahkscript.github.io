@@ -1,6 +1,6 @@
 [submodule "ko"]
 	path = ko
-	url = https://github.com/ahkscript/AHK-Docs_KO
+	url = https://github.com/autohotkey-docs-translation/v1-ko
 [submodule "pt"]
 	path = pt
-	url = https://github.com/ahkscript/AHK-Docs_PT-BR
+	url = https://github.com/autohotkey-docs-translation/v1-pt-br
