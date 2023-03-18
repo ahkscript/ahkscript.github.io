@@ -4,3 +4,6 @@
 [submodule "pt"]
 	path = pt
 	url = https://github.com/autohotkey-docs-translation/v1-pt-br
+[submodule "ja/docs/v2-omegat"]
+	path = ja/docs/v2-omegat
+	url = https://github.com/autohotkey-docs-translation/v2-ja.git
